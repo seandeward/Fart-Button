@@ -1,0 +1,59 @@
+/* import the "comic relief font" */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+/* font classes */
+.comic-relief-regular {
+font-family: "Comic Relief", system-ui;
+font-weight: 400;
+font-style: normal;
+}
+
+/* CSS Styles */
+html{
+    cursor: default;
+}
+h1{
+    /* removes built in margin that h1 gets */
+    margin: 0px;
+    color: black;
+}
+#play{
+    color: rgb(79, 0, 0);
+    font-size: xx-large;
+    background-color: rgb(239, 104, 104);
+    padding: 1em;
+    border: 0;
+    border-radius: 500px;
+    box-shadow: 0px 20px;
+
+    transition: 50ms;
+}
+#play:hover{
+    cursor: pointer;
+}
+#play:active{
+    bottom: 49%;
+    box-shadow: 0px 10px;
+}
+
+#counterContainer{
+    bottom: 40%;
+    font-size: 15px;
+    z-index: -1;
+    max-width: 100%;
+}
+
+#resetButton{
+    bottom: 35%;
+}
+
+/* CSS Piece Styles */
+.verticalCenter{
+  position: fixed;
+  bottom: 50%;
+}
+.horizontalCenter{
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
