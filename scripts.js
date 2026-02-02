@@ -6,7 +6,7 @@ let counterContainerClass = document.getElementsByClassName("counterContainer");
 // set the counter to 0
 counter.innerHTML = 0;
 function playFart() {
-    // the separate 'fart' variables
+    // the different fart audio files as separate variables
     let fart1 = new Audio("fartSoundEffects/quickFart.mp3");
     let fart2 = new Audio("fartSoundEffects/reverbFart.mp3");
     let fart3 = new Audio("fartSoundEffects/longFart.mp3");
@@ -16,9 +16,9 @@ function playFart() {
     let fart7 = new Audio("fartSoundEffects/fart7.mp3");
     let fart8 = new Audio("fartSoundEffects/fart8.mp3");
     let fart9 = new Audio("fartSoundEffects/fart9.mp3");
-    // combine the farts into a single variable as an array to be selected from
+    // combine the farts into a single variable as an array
     let fartArray = [fart1, fart2, fart3, fart4, fart5, fart6, fart7, fart8, fart9]
-    // create a randomizer that picks a random number within counted sum of variables within "fartArray"
+    // picks a random number within counted sum of variables within "fartArray"
     var randomizer = Math.floor(Math.random() * fartArray.length);
     // take the array "fartArray", and have a random variable chosen, and store it in the variable "chosenFart"
     var chosenFart = fartArray[randomizer];
@@ -33,7 +33,7 @@ function increaseCounterContainerFontSize() {
     txt.style.fontSize = (currentSize + 1) + 'px';
 };
 
-// when the play button is clicked, activate the "playFart" function
+// when the play button is clicked, play a fart and increase the container font size by 1px
 play.addEventListener("click", playFart);
 play.addEventListener("click", increaseCounterContainerFontSize);
 
@@ -41,4 +41,5 @@ play.addEventListener("click", increaseCounterContainerFontSize);
 play.onclick = function()
 {
     counter.innerHTML++;
+
 };
