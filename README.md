@@ -10,8 +10,12 @@ Just for fun. It helped me learn some basics of JavaScript.
 
 ### Misc. Sound Effects
 
-- Sound effects for every 100 button clicks, maybe a small quiet click sound for the button itself each time it's pressed (though that could get annoying fast lol).
+- Sound effects for every 100 button clicks, a  click sound for the button itself each time it's pressed (for that sweet, sweet dopamine hit).
 
 ### More Fart Sounds
 
-- A wider variety of fart sounds could improve the enjoyment reusability of the application.
+- A wider variety of fart sounds could improve the enjoyment and reusability of the application.
+
+### Highscore Leaderboard
+
+- By using a basic server library (like Flask), users and their scores could be stored in a basic database, and then displayed on the page.
